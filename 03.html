@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <style>
+        p {width: 200px; height: 200px; margin: 10px; background: #ccc; float: left;}
+        .highlight {background-color: red;}
+    </style>
+</head>
+<body>
+    <p id="click">Click on me</p>
+    <p id="dblclick">Double click on me</p>
+    <p id="mouse">Hover on Me</p>
+
+    <script>
+        // function doSomething(e){
+        //     console.log(e.target);
+        // }
+        // addEventListener('click', doSomething);
+
+        const clickParagraph = document.getElementById('click');
+
+        // clickParagraph.addEventListener('click',() => console.log('click') );
+        clickParagraph.addEventListener('mousedown',() => console.log('down') );
+        clickParagraph.addEventListener('mouseup',() => console.log('up') );
+
+        const dblclickParagraph = document.getElementById('dblclick');
+        
+        dblclickParagraph.addEventListener('dblclick', () => event.target.classList.toggle('highlight'));
+
+        // dblclickParagraph.addEventListener('dblclick', highlight);
+        // function highlight(event){
+        //     event.target.classList.toggle('highlight');
+        // }        
+    </script>
+</body>
+</html>

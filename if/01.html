@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <p></p>
+    
+    <script>
+        const paragraph = document.querySelector("p");
+        let edad = prompt("Qué edad tienes");
+
+        if (edad < 18) {
+            paragraph.textContent = "Empezando a vivir. Mucho por aprender";
+        } else {
+            paragraph.textContent = "No pierdas el tiempo";
+        }
+    </script>
+</body>
+</html>

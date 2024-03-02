@@ -1,0 +1,5 @@
+https://byui-cit.github.io/learning-modules/
+
+https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md
+
+https://github.com/spbooks/jsninja2

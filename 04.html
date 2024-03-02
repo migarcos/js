@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH</title>
+    <style>
+        input {display: block; margin: 5px 0; font-size: 1rem;}   
+        button {size: 1rem; padding: 5px;}  
+        main {width: 100%; border: dotted gray 2px;}
+        section {margin: 0 auto;  width: 250px;}   /*border: dotted red 2px;*/
+        div {display: flex; justify-content: space-around;}
+    </style>
+</head>
+<body onload="window.alert('Bienvenido a mi página!');">
+    <main>
+        <section>
+            <label>Num 1: <input type="text" id="inOne"></label>
+            <label>Num 2: <input type="text" id="inTwo"></label> 
+            <label>Respuesta: <input type="text" id="answer" disabled></label> 
+            <div><input type="submit" id="makeOperation" value="enviar">
+                <input type="submit" id="limpiar" value="Limpiar"></div>
+            
+        </section>
+    </main>
+    
+    <script src="js/02.js"></script>
+</body>
+</html>
