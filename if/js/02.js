@@ -10,7 +10,9 @@ function setWeather() {
         paragraph.textContent = "Vamo a la Playa";
     } else if (weather === "lluvioso") {
         paragraph.textContent = "Tarde de Pelis";
-    } else {
-        paragraph.textContent = "No planeado";
+    } else if (weather === "nublado") {
+        paragraph.textContent = "Hacer ejercicio";
+    } else { // no es necesario comprobar *frio*
+        paragraph.textContent = "Tomarse un chocolate";
     }
 }
