@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {width: 300px; background-color: lightgray; margin: 0 auto;
+                border: black 2px solid; display: grid; grid-template-columns: repeat(4,1fr);}
+        article {grid-column: 1/-1; height: 6rem; border:  solid 1px; display: grid;}
+        p {padding: 0 16px; text-align: right; font-family: Arial, Helvetica, sans-serif; margin: 13px 0;}
+        #resp {font-weight: bolder; font-size: 2rem; margin-top: 0px;}
+        button {font-size: 2rem; padding: 1rem; border-radius: 4px; margin: 2px;}
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <p id="values"></p>
+            <p id="resp"></p>
+        </article>
+        <button id="seven">7</button>
+        <button id="ocho">8</button>
+        <button id="nine">9</button>
+        <button id="plus">+</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="minus">-</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="multip">*</button>
+        <button id="clear">C</button>
+        <button id="zero">0</button>
+        <button id="equal">=</button>
+        <button id="division">/</button>
+    </section>
+
+    <script src="js/08_calc.js"></script>
+</body>
+</html>

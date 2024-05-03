@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        const opera = [3,"/",2];
+        if (opera[1] == "+") {
+            console.log(`${opera[0]} + ${opera[2]} = ${opera[0] + opera[2]}`);
+        } else if (opera[1] == "-") {
+            console.log(`${opera[0]} - ${opera[2]} = ${opera[0] - opera[2]}`);
+        } else if (opera[1] == "*") {
+            console.log(`${opera[0]} * ${opera[2]} = ${opera[0] + opera[2]}`);
+        } else {
+            console.log(`${opera[0]} / ${opera[2]} = ${opera[0] / opera[2]}`);
+        }
+
+        switch (opera[1]) {
+            case "+":
+                console.log(`${opera[0]} + ${opera[2]} = ${opera[0] + opera[2]}`);
+                break;
+            case "-":
+                console.log(`${opera[0]} - ${opera[2]} = ${opera[0] - opera[2]}`);
+                break;
+            case "*":
+                console.log(`${opera[0]} * ${opera[2]} = ${opera[0] * opera[2]}`);
+                break;
+            case "/":
+                console.log(`${opera[0]} / ${opera[2]} = ${opera[0] / opera[2]}`);
+                break;
+            default:
+                console.log("operador no encontrado");
+                break;
+}
+    </script>
+</body>
+</html>

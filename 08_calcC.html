@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {width: 300px; background-color: lightgray; margin: 0 auto;
+                border: black 2px solid; display: grid; grid-template-columns: repeat(4,1fr);}
+        article {grid-column: 1/-1; height: 6rem; border:  solid 1px; display: grid;}
+        p {padding: 0 16px; text-align: right; font-family: Arial, Helvetica, sans-serif; margin: 13px 0;}
+        #resp {font-weight: bolder; font-size: 2rem; margin-top: 0px;}
+        button {font-size: 2rem; padding: 1rem; border-radius: 4px; margin: 2px;}
+        input {font-size: 2rem; margin: 0; grid-row: 1; width: autos;}
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <input type="text" name="pantalla" id="pantalla" disabled>
+            <!-- <p id="values"></p> -->
+            <p id="resp"></p>
+        </article>
+        <button id="7">7</button>
+        <button id="8">8</button>
+        <button id="9">9</button>
+        <button id="+">+</button>
+        <button id="4">4</button>
+        <button id="5">5</button>
+        <button id="6">6</button>
+        <button id="-">-</button>
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="*">*</button>
+        <button id="clear">C</button>
+        <button id="zero">0</button>
+        <button id="=">=</button>
+        <button id="/">/</button>
+    </section>
+
+    <script src="js/08_calcC.js"></script>
+</body>
+</html>

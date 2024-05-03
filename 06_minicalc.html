@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            margin: 0 auto; width: 600px; border: darkred 2px solid;
+            display: grid; grid-template-columns: repeat(7, 1fr); padding: 1rem;
+        }
+        input { margin: 8px; font-size: 2rem;}
+        #in01 {grid-column: 1/4;}
+        #in02 {grid-column: 5/8;}
+        #out {grid-row: 2; grid-column: 3/6;}
+        button { grid-row: 3; font-size: 20px; padding: 10px; margin: 5px;}
+        #btn1 {grid-column: 1/2;}
+        #btn2 {grid-column: 3/4;}
+        #btn3 {grid-column: 5/6;}
+        #btn4 {grid-column: 7/8;}
+    </style>
+</head>
+<body>
+    <section>
+        <input id="in01" type="text">
+        <input id="in02" type="text">
+        <input id="out" type="text" disabled>
+        <button id="btn1">+</button>
+        <button id="btn2">-</button>
+        <button id="btn3">*</button>
+        <button id="btn4">/</button>
+    </section>
+
+    <script>
+        const vlr01 = document.querySelector("#in01");
+        const vlr02 = document.querySelector("#in02");
+        const resp = document.querySelector("#out");
+        const btnSuma = document.querySelector("#btn1");
+        const btnResta = document.querySelector("#btn2");
+        const btnMult = document.querySelector("#btn3");
+        const btnDiv = document.querySelector("#btn4");
+
+        btnSuma.onclick = () => {
+            resp.value = parseInt(vlr01.value) + parseInt(vlr02.value);
+        }
+        btnResta.onclick = () => {
+            resp.value = parseInt(vlr01.value) - parseInt(vlr02.value);
+        }
+        btnMult.onclick = () => {
+            resp.value = parseInt(vlr01.value) * parseInt(vlr02.value);
+        }
+        btnDiv.onclick = () => {
+            resp.value = parseInt(vlr01.value) / parseInt(vlr02.value);
+        }
+    </script>
+</body>
+</html>
